@@ -1,0 +1,89 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:jsx-a11y/recommended",
+    "prettier",
+    "prettier/react"
+  ],
+  "parser": "babel-eslint",
+  "globals": {
+    "window": true,
+    "describe": true,
+    "it": true,
+    "expect": true,
+    "document": true,
+    "localStorage": true,
+    "sessionStorage": true
+  },
+  "plugins": ["jsx-a11y", "prettier", "only-warn"],
+  "rules": {
+    "import/prefer-default-export": "off",
+    "import/no-cycle": "off",
+    "react/no-array-index-key": "off",
+    "import/export": "off",
+    "camelcase": "off",
+    "react/forbid-prop-types": "off",
+    "no-console": ["error", { "allow": ["error", "log"] }],
+    "semi": 0,
+    "no-use-before-define": ["error", { "functions": false }],
+    "no-param-reassign": [
+      "error",
+      { "props": true, "ignorePropertyModificationsFor": ["state"] }
+    ],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allow": [
+          "__REDUX_DEVTOOLS_EXTENSION__",
+          "__REDUX_DEVTOOLS_EXTENSION_COMPOSE__"
+        ]
+      }
+    ],
+    "react/jsx-props-no-spreading": "off",
+    "react/prop-types": "off",
+    "react/no-unescaped-entities": "off",
+    "jsx-quotes": ["error", "prefer-double"],
+    "quotes": [2, "single"],
+    "no-multiple-empty-lines": "error",
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "always-and-inside-groups",
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "pathGroupsExcludedImportTypes": ["builtin"],
+        "pathGroups": [
+          {
+            "pattern": "@xcritical/**",
+            "group": "external",
+            "position": "after"
+          }
+        ]
+      }
+    ],
+    "sort-imports": [
+      "error",
+      {
+        "ignoreCase": false,
+        "ignoreDeclarationSort": true,
+        "ignoreMemberSort": false,
+        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
+        "allowSeparatedGroups": false
+      }
+    ],
+    "prettier/prettier": [
+      "warn",
+      {
+        "semi": true,
+        "singleQuote": true
+      }
+    ]
+  }
+}

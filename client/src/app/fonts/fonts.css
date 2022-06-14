@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src:
+    local('Raleway Light'),
+    local('Raleway-Light'),
+    url('Raleway/Light/Raleway-Light.ttf');
+  src:
+    local('Raleway Light'),
+    local('Raleway-Light'),
+    url('Raleway/Light/Raleway-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src:
+    local('Raleway Regular'),
+    local('Raleway-Regular'),
+    url('Raleway/Regular/Raleway-Regular.ttf');
+  src:
+    local('Raleway Regular'),
+    local('Raleway-Regular'),
+    url('Raleway/Regular/Raleway-Regular.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src:
+    local('Raleway SemiBold'),
+    local('Raleway-SemiBold'),
+    url('Raleway/Semibold/Raleway-SemiBold.ttf');
+  src:
+    local('Raleway SemiBold'),
+    local('Raleway-SemiBold'),
+    url('Raleway/Semibold/Raleway-SemiBold.ttf') format('truetype')
+}
